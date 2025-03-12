@@ -67,6 +67,11 @@ form {
     font-weight: bold;
 }
 
+#toggle{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
 button {
     padding: 5px 10px;
     border-radius: 8px;

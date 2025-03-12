@@ -30,7 +30,7 @@ function renderTodos() {
   todoList.getTodos().forEach((todo, index) => {
     const todoElement = document.createElement("div");
     todoElement.className = `todo-item ${todo.completed ? "completed" : ""}`;
-    todoElement.innerHTML = `<h3>${todo.title}</h3><p>${todo.description}</p><p>Due: ${todo.dueDate}</p><p>Priority: ${todo.priority}</p><button onclick="toggleTodo(${index})">Toggle Complete</button><button onclick="deleteTodo(${index})">Delete</button>`;
+    todoElement.innerHTML = `<h3>${todo.title}</h3><p>${todo.description}</p><p>Due: ${todo.dueDate}</p><p>Priority: ${todo.priority}</p><button id = "toggle" onclick="toggleTodo(${index})">Toggle Complete</button><button  id = "delete" onclick="deleteTodo(${index})">Delete</button>`;
     todoContainer.appendChild(todoElement);
   });
 }
